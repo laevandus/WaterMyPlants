@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8EED31423CAFB29007D855F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED31323CAFB29007D855F /* AppDelegate.swift */; };
+		C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED31523CAFB29007D855F /* SceneDelegate.swift */; };
+		C8EED31D23CAFB2A007D855F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EED31C23CAFB2A007D855F /* Assets.xcassets */; };
+		C8EED32023CAFB2A007D855F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */; };
+		C8EED32323CAFB2A007D855F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */; };
+		C8EED32E23CAFB2A007D855F /* WaterMyPlantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */; };
+		C8EED33923CAFB2A007D855F /* WaterMyPlantsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */; };
+		C8EED34B23CAFB89007D855F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34923CAFB89007D855F /* Log.swift */; };
+		C8EED34C23CAFB89007D855F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34A23CAFB89007D855F /* DependencyContainer.swift */; };
+		C8EED35123CAFBA1007D855F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34D23CAFBA1007D855F /* Plant.swift */; };
+		C8EED35223CAFBA1007D855F /* CoreData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */; };
+		C8EED35323CAFBA1007D855F /* Plants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */; };
+		C8EED35823CAFBC5007D855F /* PlantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */; };
+		C8EED35923CAFBC5007D855F /* AddPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */; };
+		C8EED35A23CAFBC5007D855F /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35623CAFBC5007D855F /* PlantListView.swift */; };
+		C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35723CAFBC5007D855F /* AddPlantView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8EED32A23CAFB2A007D855F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EED30F23CAFB29007D855F;
+			remoteInfo = WaterMyPlants;
+		};
+		C8EED33523CAFB2A007D855F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EED30F23CAFB29007D855F;
+			remoteInfo = WaterMyPlants;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8EED31023CAFB29007D855F /* WaterMyPlants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMyPlants.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED31323CAFB29007D855F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8EED31523CAFB29007D855F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C8EED31C23CAFB2A007D855F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8EED32223CAFB2A007D855F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8EED32423CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMyPlantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMyPlantsTests.swift; sourceTree = "<group>"; };
+		C8EED32F23CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMyPlantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMyPlantsUITests.swift; sourceTree = "<group>"; };
+		C8EED33A23CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED34923CAFB89007D855F /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C8EED34A23CAFB89007D855F /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		C8EED34D23CAFBA1007D855F /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData+Extensions.swift"; sourceTree = "<group>"; };
+		C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Plants.xcdatamodel; sourceTree = "<group>"; };
+		C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListViewModel.swift; sourceTree = "<group>"; };
+		C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewModel.swift; sourceTree = "<group>"; };
+		C8EED35623CAFBC5007D855F /* PlantListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		C8EED35723CAFBC5007D855F /* AddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8EED30D23CAFB29007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32623CAFB2A007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33123CAFB2A007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8EED30723CAFB29007D855F = {
+			isa = PBXGroup;
+			children = (
+				C8EED31223CAFB29007D855F /* WaterMyPlants */,
+				C8EED32C23CAFB2A007D855F /* WaterMyPlantsTests */,
+				C8EED33723CAFB2A007D855F /* WaterMyPlantsUITests */,
+				C8EED31123CAFB29007D855F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8EED31123CAFB29007D855F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31023CAFB29007D855F /* WaterMyPlants.app */,
+				C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */,
+				C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8EED31223CAFB29007D855F /* WaterMyPlants */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED34623CAFB4F007D855F /* Application */,
+				C8EED34723CAFB58007D855F /* Persistence */,
+				C8EED34823CAFB6B007D855F /* Plant */,
+				C8EED31C23CAFB2A007D855F /* Assets.xcassets */,
+				C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */,
+				C8EED32423CAFB2A007D855F /* Info.plist */,
+				C8EED31E23CAFB2A007D855F /* Preview Content */,
+			);
+			path = WaterMyPlants;
+			sourceTree = "<group>";
+		};
+		C8EED31E23CAFB2A007D855F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8EED32C23CAFB2A007D855F /* WaterMyPlantsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */,
+				C8EED32F23CAFB2A007D855F /* Info.plist */,
+			);
+			path = WaterMyPlantsTests;
+			sourceTree = "<group>";
+		};
+		C8EED33723CAFB2A007D855F /* WaterMyPlantsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */,
+				C8EED33A23CAFB2A007D855F /* Info.plist */,
+			);
+			path = WaterMyPlantsUITests;
+			sourceTree = "<group>";
+		};
+		C8EED34623CAFB4F007D855F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31323CAFB29007D855F /* AppDelegate.swift */,
+				C8EED31523CAFB29007D855F /* SceneDelegate.swift */,
+				C8EED34A23CAFB89007D855F /* DependencyContainer.swift */,
+				C8EED34923CAFB89007D855F /* Log.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C8EED34723CAFB58007D855F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */,
+				C8EED34D23CAFBA1007D855F /* Plant.swift */,
+				C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		C8EED34823CAFB6B007D855F /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED35723CAFBC5007D855F /* AddPlantView.swift */,
+				C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */,
+				C8EED35623CAFBC5007D855F /* PlantListView.swift */,
+				C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8EED30F23CAFB29007D855F /* WaterMyPlants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED33D23CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlants" */;
+			buildPhases = (
+				C8EED30C23CAFB29007D855F /* Sources */,
+				C8EED30D23CAFB29007D855F /* Frameworks */,
+				C8EED30E23CAFB29007D855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMyPlants;
+			productName = WaterMyPlants;
+			productReference = C8EED31023CAFB29007D855F /* WaterMyPlants.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8EED32823CAFB2A007D855F /* WaterMyPlantsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED34023CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsTests" */;
+			buildPhases = (
+				C8EED32523CAFB2A007D855F /* Sources */,
+				C8EED32623CAFB2A007D855F /* Frameworks */,
+				C8EED32723CAFB2A007D855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8EED32B23CAFB2A007D855F /* PBXTargetDependency */,
+			);
+			name = WaterMyPlantsTests;
+			productName = WaterMyPlantsTests;
+			productReference = C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8EED33323CAFB2A007D855F /* WaterMyPlantsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED34323CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsUITests" */;
+			buildPhases = (
+				C8EED33023CAFB2A007D855F /* Sources */,
+				C8EED33123CAFB2A007D855F /* Frameworks */,
+				C8EED33223CAFB2A007D855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8EED33623CAFB2A007D855F /* PBXTargetDependency */,
+			);
+			name = WaterMyPlantsUITests;
+			productName = WaterMyPlantsUITests;
+			productReference = C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8EED30823CAFB29007D855F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Augmented Code";
+				TargetAttributes = {
+					C8EED30F23CAFB29007D855F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C8EED32823CAFB2A007D855F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C8EED30F23CAFB29007D855F;
+					};
+					C8EED33323CAFB2A007D855F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C8EED30F23CAFB29007D855F;
+					};
+				};
+			};
+			buildConfigurationList = C8EED30B23CAFB29007D855F /* Build configuration list for PBXProject "WaterMyPlants" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8EED30723CAFB29007D855F;
+			productRefGroup = C8EED31123CAFB29007D855F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8EED30F23CAFB29007D855F /* WaterMyPlants */,
+				C8EED32823CAFB2A007D855F /* WaterMyPlantsTests */,
+				C8EED33323CAFB2A007D855F /* WaterMyPlantsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8EED30E23CAFB29007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED32323CAFB2A007D855F /* LaunchScreen.storyboard in Resources */,
+				C8EED32023CAFB2A007D855F /* Preview Assets.xcassets in Resources */,
+				C8EED31D23CAFB2A007D855F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32723CAFB2A007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33223CAFB2A007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8EED30C23CAFB29007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED35923CAFBC5007D855F /* AddPlantViewModel.swift in Sources */,
+				C8EED31423CAFB29007D855F /* AppDelegate.swift in Sources */,
+				C8EED35A23CAFBC5007D855F /* PlantListView.swift in Sources */,
+				C8EED35223CAFBA1007D855F /* CoreData+Extensions.swift in Sources */,
+				C8EED35823CAFBC5007D855F /* PlantListViewModel.swift in Sources */,
+				C8EED35123CAFBA1007D855F /* Plant.swift in Sources */,
+				C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */,
+				C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */,
+				C8EED34B23CAFB89007D855F /* Log.swift in Sources */,
+				C8EED35323CAFBA1007D855F /* Plants.xcdatamodeld in Sources */,
+				C8EED34C23CAFB89007D855F /* DependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32523CAFB2A007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED32E23CAFB2A007D855F /* WaterMyPlantsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33023CAFB2A007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED33923CAFB2A007D855F /* WaterMyPlantsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8EED32B23CAFB2A007D855F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8EED30F23CAFB29007D855F /* WaterMyPlants */;
+			targetProxy = C8EED32A23CAFB2A007D855F /* PBXContainerItemProxy */;
+		};
+		C8EED33623CAFB2A007D855F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8EED30F23CAFB29007D855F /* WaterMyPlants */;
+			targetProxy = C8EED33523CAFB2A007D855F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8EED32223CAFB2A007D855F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8EED33B23CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8EED33C23CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8EED33E23CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlants/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMyPlants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8EED33F23CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlants/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMyPlants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8EED34123CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMyPlants.app/WaterMyPlants";
+			};
+			name = Debug;
+		};
+		C8EED34223CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMyPlants.app/WaterMyPlants";
+			};
+			name = Release;
+		};
+		C8EED34423CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMyPlants;
+			};
+			name = Debug;
+		};
+		C8EED34523CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMyPlants;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8EED30B23CAFB29007D855F /* Build configuration list for PBXProject "WaterMyPlants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED33B23CAFB2A007D855F /* Debug */,
+				C8EED33C23CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED33D23CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED33E23CAFB2A007D855F /* Debug */,
+				C8EED33F23CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED34023CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED34123CAFB2A007D855F /* Debug */,
+				C8EED34223CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED34323CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED34423CAFB2A007D855F /* Debug */,
+				C8EED34523CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */,
+			);
+			currentVersion = C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */;
+			path = Plants.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C8EED30823CAFB29007D855F /* Project object */;
+}
