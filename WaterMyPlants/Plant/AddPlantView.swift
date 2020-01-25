@@ -1,6 +1,6 @@
 //
 //  AddPlantView.swift
-//  WaterMyPlans
+//  WaterMyPlants
 //
 //  Created by Toomas Vahter on 12.01.2020.
 //  Copyright © 2020 Augmented Code. All rights reserved.
