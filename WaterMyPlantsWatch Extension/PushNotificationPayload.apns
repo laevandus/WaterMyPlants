@@ -1,0 +1,17 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Test message",
+            "title": "Optional title",
+            "subtitle": "Optional subtitle"
+        },
+        "category": "WATERING_REMINDER",
+        "thread-id": "plantid123"
+    },
+    "plant": {
+        "id": "plantid123",
+        "name": "Aloe",
+        "lastDate": 1579937802,
+        "nextDate": 1580515200
+    }
+}
