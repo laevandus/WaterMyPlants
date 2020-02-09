@@ -10,6 +10,7 @@ import CoreData
 
 final class DependencyContainer {
     let persistentContainer: NSPersistentContainer
+    private(set) lazy var connectivityProvider = WatchConnectivityProvider(persistentContainer: persistentContainer)
     
     init() {
         self.persistentContainer = NSPersistentContainer(name: "Plants")

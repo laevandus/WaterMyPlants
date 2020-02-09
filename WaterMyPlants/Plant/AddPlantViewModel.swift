@@ -27,13 +27,13 @@ extension AddPlantView {
         
         func save() {
             let plant = Plant.insert(withName: name, into: managedObjectContext)
+            // TODO: Add pickers for setting dates
+            let lastDayOffset = (-7 ... -1).randomElement()!
+            let nextDayOffset = (2...7).randomElement()!
+            plant.lastWateringDate = Calendar.autoupdatingCurrent.date(byAdding: .day, value: lastDayOffset, to: Date())!
+            plant.nextWateringDate = Calendar.autoupdatingCurrent.date(byAdding: .day, value: nextDayOffset, to: Date())!
             guard managedObjectContext.saveIfNeeded() else { return }
             os_log(.debug, log: .plants, "added plant with name %s", plant.name)
         }
     }
 }
-
-fileprivate struct ComposedPlant {
-    var name: String
-}
-

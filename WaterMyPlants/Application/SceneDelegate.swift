@@ -16,6 +16,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let dependencyContainer = (UIApplication.shared.delegate as! AppDelegate).dependencyContainer
         // TODO: Loading view
         dependencyContainer.loadDependencies {
+            dependencyContainer.connectivityProvider.connect()
+            
             let managedObjectContext = dependencyContainer.persistentContainer.viewContext
             let viewModel = PlantListView.ViewModel(managedObjectContext: managedObjectContext)
             let contentView = PlantListView(viewModel: viewModel).environment(\.managedObjectContext, managedObjectContext)

@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		C810D02423DD6F5400FA7A89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C886735323DC723B00E20671 /* Localizable.strings */; };
 		C810D09023DD7F9D00FA7A89 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886735823DC7F7A00E20671 /* NotificationManager.swift */; };
+		C8319D5523EEE28600744181 /* DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */; };
+		C8319D5723EF966300744181 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8319D5623EF966300744181 /* PlantCell.swift */; };
+		C874289723EE9EEB0056F3EB /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */; };
+		C874289A23EEA2ED0056F3EB /* PhoneConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */; };
+		C874289C23EEA3370056F3EB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289B23EEA3370056F3EB /* Log.swift */; };
+		C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
+		C874289F23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
+		C87428A123EECCE70056F3EB /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87428A023EECCE70056F3EB /* PlantListView.swift */; };
 		C88672BC23DC17E100E20671 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88672BA23DC17E100E20671 /* Interface.storyboard */; };
 		C88672BE23DC17E100E20671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88672BD23DC17E100E20671 /* Assets.xcassets */; };
 		C88672C523DC17E200E20671 /* WaterMyPlantsWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C88672CA23DC17E200E20671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672C923DC17E200E20671 /* ContentView.swift */; };
 		C88672CC23DC17E200E20671 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CB23DC17E200E20671 /* HostingController.swift */; };
 		C88672CE23DC17E200E20671 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */; };
 		C88672D023DC17E200E20671 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CF23DC17E200E20671 /* NotificationController.swift */; };
@@ -97,12 +104,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRepresentation.swift; sourceTree = "<group>"; };
+		C8319D5623EF966300744181 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+		C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityProvider.swift; sourceTree = "<group>"; };
+		C874289B23EEA3370056F3EB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C874289D23EEA53A0056F3EB /* WatchCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunication.swift; sourceTree = "<group>"; };
+		C87428A023EECCE70056F3EB /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
 		C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMyPlantsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88672BB23DC17E100E20671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C88672BD23DC17E100E20671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C88672BF23DC17E100E20671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaterMyPlantsWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C88672C923DC17E200E20671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C88672CB23DC17E200E20671 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		C88672CF23DC17E200E20671 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -171,6 +184,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8319D5323EEE26B00744181 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C874289823EEA2B80056F3EB /* DynamicNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CF23DC17E200E20671 /* NotificationController.swift */,
+				C88672D123DC17E200E20671 /* NotificationView.swift */,
+				C886735523DC731200E20671 /* NotificationViewModel.swift */,
+			);
+			path = DynamicNotification;
+			sourceTree = "<group>";
+		};
+		C87428A423EECDF90056F3EB /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CB23DC17E200E20671 /* HostingController.swift */,
+				C87428A023EECCE70056F3EB /* PlantListView.swift */,
+				C8319D5623EF966300744181 /* PlantCell.swift */,
+				C886735023DC612F00E20671 /* Plant.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		C87428A523EECE170056F3EB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */,
+				C874289B23EEA3370056F3EB /* Log.swift */,
+				C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		C88672B923DC17E100E20671 /* WaterMyPlantsWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,16 +236,10 @@
 		C88672C823DC17E200E20671 /* WaterMyPlantsWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C88672C923DC17E200E20671 /* ContentView.swift */,
-				C88672CB23DC17E200E20671 /* HostingController.swift */,
-				C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */,
-				C88672CF23DC17E200E20671 /* NotificationController.swift */,
-				C88672D123DC17E200E20671 /* NotificationView.swift */,
-				C886735523DC731200E20671 /* NotificationViewModel.swift */,
-				C886735023DC612F00E20671 /* Plant.swift */,
-				C88672D323DC17E200E20671 /* Assets.xcassets */,
-				C88672D823DC17E200E20671 /* Info.plist */,
-				C88672D923DC17E200E20671 /* PushNotificationPayload.apns */,
+				C87428A523EECE170056F3EB /* Application */,
+				C874289823EEA2B80056F3EB /* DynamicNotification */,
+				C8319D5323EEE26B00744181 /* General */,
+				C87428A423EECDF90056F3EB /* Plant */,
 				C886735223DC722100E20671 /* Resources */,
 				C88672D523DC17E200E20671 /* Preview Content */,
 			);
@@ -211,7 +257,10 @@
 		C886735223DC722100E20671 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C88672D323DC17E200E20671 /* Assets.xcassets */,
+				C88672D823DC17E200E20671 /* Info.plist */,
 				C886735323DC723B00E20671 /* Localizable.strings */,
+				C88672D923DC17E200E20671 /* PushNotificationPayload.apns */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,6 +345,8 @@
 				C8EED31523CAFB29007D855F /* SceneDelegate.swift */,
 				C8EED34A23CAFB89007D855F /* DependencyContainer.swift */,
 				C8EED34923CAFB89007D855F /* Log.swift */,
+				C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */,
+				C874289D23EEA53A0056F3EB /* WatchCommunication.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -515,13 +566,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8319D5523EEE28600744181 /* DictionaryRepresentation.swift in Sources */,
 				C88672CC23DC17E200E20671 /* HostingController.swift in Sources */,
 				C886735123DC612F00E20671 /* Plant.swift in Sources */,
-				C88672CA23DC17E200E20671 /* ContentView.swift in Sources */,
+				C874289F23EEA53A0056F3EB /* WatchCommunication.swift in Sources */,
+				C874289C23EEA3370056F3EB /* Log.swift in Sources */,
 				C886735623DC731200E20671 /* NotificationViewModel.swift in Sources */,
+				C8319D5723EF966300744181 /* PlantCell.swift in Sources */,
 				C88672D023DC17E200E20671 /* NotificationController.swift in Sources */,
 				C88672CE23DC17E200E20671 /* ExtensionDelegate.swift in Sources */,
+				C874289A23EEA2ED0056F3EB /* PhoneConnectivityProvider.swift in Sources */,
 				C88672D223DC17E200E20671 /* NotificationView.swift in Sources */,
+				C87428A123EECCE70056F3EB /* PlantListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +593,10 @@
 				C8EED35123CAFBA1007D855F /* Plant.swift in Sources */,
 				C810D09023DD7F9D00FA7A89 /* NotificationManager.swift in Sources */,
 				C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */,
+				C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */,
 				C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */,
 				C8EED34B23CAFB89007D855F /* Log.swift in Sources */,
+				C874289723EE9EEB0056F3EB /* WatchConnectivityProvider.swift in Sources */,
 				C8EED35323CAFBA1007D855F /* Plants.xcdatamodeld in Sources */,
 				C8EED34C23CAFB89007D855F /* DependencyContainer.swift in Sources */,
 			);
@@ -651,7 +709,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlantsWatch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = XJPC47UM3W;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Info.plist";
+				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +733,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlantsWatch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = XJPC47UM3W;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Info.plist";
+				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

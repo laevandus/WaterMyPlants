@@ -31,11 +31,11 @@ struct NotificationViewModel {
     
     var lastWatering: String {
         let format = NSLocalizedString("NotificationView_LastWatering", comment: "Last watering date.")
-        return String(format: format, dateFormatter.string(from: plant.lastDate))
+        return String(format: format, dateFormatter.string(from: plant.lastWateringDate))
     }
     
     var nextWatering: String {
         let format = NSLocalizedString("NotificationView_NextWatering", comment: "Next watering date.")
-        return String(format: format, dateFormatter.string(from: plant.nextDate))
+        return String(format: format, dateFormatter.string(from: plant.nextWateringDate))
     }
 }

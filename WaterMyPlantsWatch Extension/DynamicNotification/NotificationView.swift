@@ -26,7 +26,7 @@ struct NotificationView_Previews: PreviewProvider {
     static var previews: some View {
         let lastDate = Calendar.autoupdatingCurrent.date(byAdding: .weekOfMonth, value: -1, to: Date())!
         let nextDate = Calendar.autoupdatingCurrent.date(byAdding: .weekOfMonth, value: 1, to: Date())!
-        let plant = Plant(id: "id", name: "Aloe", lastDate: lastDate, nextDate: nextDate)
+        let plant = Plant(id: "id", name: "Aloe", lastWateringDate: lastDate, nextWateringDate: nextDate)
         return NotificationView(viewModel: NotificationViewModel(plant: plant))
     }
 }

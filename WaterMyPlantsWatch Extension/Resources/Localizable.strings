@@ -12,3 +12,5 @@
 "NotificationView_Subtitle" = "Needs watering";
 "NotificationView_LastWatering" = "Last: %@";
 "NotificationView_NextWatering" = "Next: %@";
+
+"PlantCellView_NextWatering" = "Next watering\n%@";
