@@ -41,10 +41,10 @@ extension Plant {
         return NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
     }
     
-    static func all() -> [Plant] {
+    static func all(in context: NSManagedObjectContext) -> [Plant] {
         let request = makeRequest()
         do {
-            return try request.execute()
+            return try context.fetch(request)
         }
         catch let nsError as NSError {
             os_log(.debug, log: .plants, "failed fetching all plants with error %s %s", nsError, nsError.userInfo)

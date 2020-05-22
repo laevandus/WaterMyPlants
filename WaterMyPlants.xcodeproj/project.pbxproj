@@ -17,6 +17,7 @@
 		C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
 		C874289F23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
 		C87428A123EECCE70056F3EB /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87428A023EECCE70056F3EB /* PlantListView.swift */; };
+		C87DF65A2477BB1E00FB9A88 /* PlantListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */; };
 		C88672BC23DC17E100E20671 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88672BA23DC17E100E20671 /* Interface.storyboard */; };
 		C88672BE23DC17E100E20671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88672BD23DC17E100E20671 /* Assets.xcassets */; };
 		C88672C523DC17E200E20671 /* WaterMyPlantsWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -111,6 +112,7 @@
 		C874289B23EEA3370056F3EB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C874289D23EEA53A0056F3EB /* WatchCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunication.swift; sourceTree = "<group>"; };
 		C87428A023EECCE70056F3EB /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListFlowCoordinator.swift; sourceTree = "<group>"; };
 		C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMyPlantsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88672BB23DC17E100E20671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C88672BD23DC17E100E20671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 				C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */,
 				C8EED35623CAFBC5007D855F /* PlantListView.swift */,
 				C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */,
+				C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */,
 			);
 			path = Plant;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				C8EED35823CAFBC5007D855F /* PlantListViewModel.swift in Sources */,
 				C8EED35123CAFBA1007D855F /* Plant.swift in Sources */,
 				C810D09023DD7F9D00FA7A89 /* NotificationManager.swift in Sources */,
+				C87DF65A2477BB1E00FB9A88 /* PlantListFlowCoordinator.swift in Sources */,
 				C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */,
 				C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */,
 				C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */,
