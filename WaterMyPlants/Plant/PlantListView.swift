@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PlantListView: View {
-    @Environment(\.self) var environment
+    @EnvironmentObject var flowCoordinator: PlantListFlowCoordinator
     @ObservedObject var viewModel: ViewModel
     
     var body: some View {
@@ -27,13 +27,8 @@ struct PlantListView: View {
         }, label: {
             Image(systemName: "plus").frame(minWidth: 32, minHeight: 32)
         }).sheet(isPresented: self.$viewModel.isPresentingAddPlant) {
-            self.makeAddPlantView()
+            AddPlantView(viewModel: self.flowCoordinator.makeAddPlantViewModel())
         }
-    }
-    
-    private func makeAddPlantView() -> AddPlantView {
-        let viewModel = AddPlantView.ViewModel(managedObjectContext: environment.managedObjectContext)
-        return AddPlantView(viewModel: viewModel)
     }
 }
 
