@@ -11,7 +11,7 @@
     "plant": {
         "id": "plantid123",
         "name": "Aloe",
-        "lastDate": 1579937802,
-        "nextDate": 1580515200
+        "lastWateringDate": 1579937802,
+        "nextWateringDate": 1580515200
     }
 }
